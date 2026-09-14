@@ -1,4 +1,5 @@
 # LC 973: https://leetcode.com/problems/k-closest-points-to-origin/description/
+
 from typing import List
 from heapq import heappush, heappop
 

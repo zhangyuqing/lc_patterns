@@ -1,6 +1,6 @@
 # LC 236 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 
-from tree_node import TreeNode
+from lc_patterns.utils.tree_node import TreeNode
 
 class LCA:
     def recursive(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':

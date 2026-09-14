@@ -1,4 +1,4 @@
-from tree_node import TreeNode
+from lc_patterns.utils.tree_node import TreeNode
 from typing import Optional, List
 from collections import deque
 # deque: array that can popleft()
