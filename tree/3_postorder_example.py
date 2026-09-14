@@ -1,7 +1,7 @@
 # LC 543: https://leetcode.com/problems/diameter-of-binary-tree/
 
-from typing import Optional
 from lc_patterns.utils.tree_node import TreeNode
+from typing import Optional
 
 class DiameterOfBinaryTree:
     def __init__(self):    
