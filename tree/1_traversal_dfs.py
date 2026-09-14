@@ -11,6 +11,7 @@ class DFSRecursive:
                 return 
 
             # pre
+            # process node (append) => recurse left => recurse right
             output.append(node.val)
             dfs(node.left)
             dfs(node.right)
@@ -33,6 +34,7 @@ class DFSIterative:
 
             if node:
                 if visited:
+                    # process node
                     output.append(node.val)
                 else:
                     # reverse of recursion order

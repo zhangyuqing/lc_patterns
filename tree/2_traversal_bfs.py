@@ -9,7 +9,7 @@ class BFS:
         q = deque([root])
 
         while q:
-            level_size = len(q)
+            level_size = len(q) # fix level size each level
             curr_level = []
             for i in range(level_size):
                 node = q.popleft()
@@ -20,4 +20,5 @@ class BFS:
             if curr_level:
                 output.append(curr_level)
 
+        # or alternatively, only put non empty node in queue
         return output
