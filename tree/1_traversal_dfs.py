@@ -45,3 +45,27 @@ class DFSIterative:
                     # post: node => right => left
 
         return output
+
+
+
+def in_order_simplified(root: Optional[TreeNode]) -> List[int]:
+    # no need for visited, stack keeps BST's next smallest node on top
+    # every node if has node.right, push node.rights' left most path to stack
+    output = []
+    stack = []
+    
+    p = root
+    while p:
+        stack.append(p)
+        p = p.left
+
+    while stack:
+        node = stack.pop()
+        output.append(node.val)
+        if node.right:
+            p = node.right
+            while p:
+                stack.append(p)
+                p = p.left
+
+    return output
