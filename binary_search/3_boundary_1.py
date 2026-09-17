@@ -3,6 +3,7 @@
 from typing import List
 
 def searchRange(nums: List[int], target: int) -> List[int]:
+    # first position >= target & last position <= target
     output = [-1, -1]
     if len(nums) == 0:
         return output
@@ -28,4 +29,5 @@ def searchRange(nums: List[int], target: int) -> List[int]:
             right2 = mid2 - 1
     output[1] = right2
     return output
+
 
