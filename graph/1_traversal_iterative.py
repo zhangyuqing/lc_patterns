@@ -1,7 +1,7 @@
 # Iterative DFS & BFS template
 # - pop
-# - mark visited
-# - processing
+# - check & add visited
+# - process node
 # - expand & push
 # 
 # def search(start):
