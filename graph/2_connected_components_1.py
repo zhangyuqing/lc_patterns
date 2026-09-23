@@ -25,6 +25,7 @@ def findRedundantConnection(edges: list[list[int]]) -> list[int]:
                 for nb in adj_list[node]:
                     frontier.append(nb)
 
+        # all nodes reachable
         if len(visited) == n:
             return edge_to_remove
 
@@ -32,7 +33,7 @@ def findRedundantConnection(edges: list[list[int]]) -> list[int]:
 ## Union Find
 def findRedundantConnection(edges: list[list[int]]) -> list[int]:
     n = len(edges)
-
+    # init
     cc = [i for i in range(n+1)]
     # root of i at index i, 0 - no use
 
